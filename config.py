@@ -7,16 +7,16 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "28027658"))
+API_HASH = getenv("API_HASH", "044c3e4f8556a684c66b24db62f0fec8")
 
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN", "7052307127:AAGwnQg_09x2R131bypZgB8Yiz1dgZZ6m5g")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
-MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "ʀᴀꜱᴀᴛʜɪ ʙᴀᴇ ᴍᴜsɪᴄ")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Hypernetwork123:Hypernetwork123@cluster456.gbvjydm.mongodb.net/?retryWrites=true&w=majority")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID","-1002045029099"))
+MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "test")
 
-OWNER_ID = list(map(int, getenv("OWNER_ID", "5012967367").split()))
+OWNER_ID = list(map(int, getenv("OWNER_ID", "6550354041").split()))
 
 HEROKU_API_KEY = getenv("HEROKU_API_KEY", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", None)
